@@ -33,8 +33,7 @@ class DataTransformation:
 
             numerical_features = ['age', 'workclass',  'education_num', 'marital_status',
             'occupation', 'relationship', 'race', 'sex', 'capital_gain',
-            'capital_loss', 'hours_per_week', 'native_country']
-# age = 2,5,78, 32, 56, 
+            'capital_loss', 'hours_per_week', 'native_country'] 
             num_pipeline = Pipeline(
                 steps = [
                 ("imputer", SimpleImputer(strategy = 'median')),
